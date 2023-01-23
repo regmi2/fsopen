@@ -19,5 +19,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "devServer": {
+    "compress": "true",
+    "public": "https://fsopen-phonebook-bsol.onrender.com/"
   }
 }
