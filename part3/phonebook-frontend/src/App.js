@@ -19,7 +19,11 @@ const App = () => {
       .getAll()
       .then(initialPersons => {
         setPersons(initialPersons)
-      })
+      }).catch((e) => {
+        console.log("some error with axios")
+      }
+
+      )
   }, [])
 
 
