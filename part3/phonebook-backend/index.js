@@ -42,7 +42,7 @@ app.get('/api/persons', (_request, response) => {
     response.json(persons)
 })
 
-app.get('/info', (request, response) => {
+app.get('/info', (_request, response) => {
     const currentDate = new Date()
     response.send(`<p>Phonebook has info for ${persons.length} people</p>
                         <p> ${currentDate}`)
